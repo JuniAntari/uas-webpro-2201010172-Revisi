@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>2201010172</title>
+
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" /></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <main>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/199192948.jpg?k=fab1de45242c5324c8627263b45e8ba9a828783bf8ec6b52d2c99c066f45f4e5&o=&hp=1" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary" aria-label="Third navbar example">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="akomodasi.html">Akomodasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="wawasan.html">Wawasan</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="shadow p-3 mb-5 bg-body rounded">
+        <div class="row">
+            <div class="col">
+                <label for="exampleFormControlInput1" class="form-label">Kategori</label>
+                <select  id="jenis" class="form-select" aria-label="Default select example">
+                    <option value="Objek_Wisata">Objek Wisata</option>
+                    <option value="Villa">Villa </option>
+                  </select>
+            </div>
+            <div class="col">
+                <label for="checkin" class="form-label">Tanggal Pemesanan</label>
+                <input type="date" class="form-control" id="Tanggal">
+            </div>
+            <div class="col">
+                <label for="checkout" class="form-label">Tanggal Berangkat</label>
+                <input type="date" class="form-control" id="Tanggal">
+                
+            </div>
+            <div class="col" style="margin-top: 32px; margin-left: 10px;">
+                <a id="Booking" type="button" class="btn btn-primary">Booking</a>
+            </div>
+        </div>
+      </div>
+      <div class="row mt-2" id="divObjek_Wisata" style="display: none;">
+        <div class="col-sm-3">
+            <div class="card ms-2" style="width: 18rem;">
+                <img src="https://awsimages.detik.net.id/community/media/visual/2020/09/19/pantai-kelingking.jpeg?w=1000" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pantai Kelingking</h5>
+                  <h5>Rp. 30.000/org</h5>
+                  <a href="#" class="btn btn-primary" onclick="booking('Pantai Kelingking',' 50.000/org')">Booking</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card ms-2" style="width: 18rem;">
+                <img src="https://wisatabalipenida.com/wp-content/uploads/2021/03/nusa-penida-destination.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Rumah Pohon</h5>
+                  <h5>Rp. 20.000/org</h5>
+                  <a href="#" class="btn btn-primary" onclick="booking('Rumah Pohon',' 20.000/org')">Booking</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card ms-2" style="width: 18rem;">
+                <img src="https://m-kuta.com/wp-content/uploads/2020/07/Jembatan-Kuning-Nusa-di-Lembongan-klungkung-bali.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jembatan Kuning</h5>
+                  <h5>Rp. 35.000/org</h5>
+                  <a href="#" class="btn btn-primary" onclick="booking('Jembatan Kuning','35.000/org')">Booking</a></a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card ms-2" style="width: 18rem;">
+              <img src="https://www.thebigwalkabout.com/wp-content/uploads/2019/11/IMG_3516.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Diamond Beach </h5>
+                <h5>Rp. 30.000/org</h5>
+                <a href="#" class="btn btn-primary" onclick="booking('Diamond Beach','30.000/org')">Booking</a></a>
+              </div>
+            </div>
+      </div>
+      </div>
+      <div class="row mt-2" id="divVilla" style="display: none;">
+        <div class="col-sm-3">
+            <div class="card ms-2" style="width: 18rem;">
+                <img src="https://hoteldesloges.com/wp-content/uploads/2021/08/Hotel-Unik-Nusa-Penida.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Apit Lawang Villas</h5>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <h5>Starts From IDR. 113.000,00</h5>
+                  <a href="#" class="btn btn-primary" onclick="booking('Apit Lawang Villas',' 113.000.000')">Booking</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card ms-2" style="width: 18rem;">
+                <img src="https://i.pinimg.com/originals/37/bc/23/37bc233199eb664525a0e7f8a835e623.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Villa With Sea</h5>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <h5>Starts From IDR. 225.000,00</h5>
+                  <a href="#" class="btn btn-primary" onclick="booking('Villa With Sea',' 225.000,00')">Booking</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card ms-2" style="width: 18rem;">
+                <img src="https://huebali.com/wp-content/uploads/2022/02/penida-diamond-beach-villa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Diamond Beach Villas</h5>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <h5>Starts From IDR. 325.000,00</h5>
+                  <a href="#" class="btn btn-primary" onclick="booking('Diamond Beach Villas',' 325.000,00')">Booking</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card ms-2" style="width: 18rem;">
+                <img src="https://www.booknpay.net/ver3/branchimage/kubu-kak-dudung-villas/15.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kubu Penida Villa</h5>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <h5>Starts From IDR. 150.000,00</h5>
+                  <a href="#" class="btn btn-primary" onclick="booking('Kubu Penida Villa',' 150.000,00')">Booking</a>
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="judulmodal">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="harga" class="form-label">Harga</label>
+              <input type="text" readonly="readonly" id="harga" class="form-control" placeholder="Disabled input">
+
+              <label for="qty" class="form-label">Jumlah Orang</label>
+              <input type="number"  id="qty" class="form-control" placeholder="Disabled input">
+
+              <label for="total" class="form-label">total</label>
+              <input type="text" readonly="readonly" id="total" class="form-control" placeholder="">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary" id="save">Booking</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/bootstrap/jquery-3.6.1.min.js"></script>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <script src = "https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+      <script>
+        $( function(){
+          $( "#checkout" ).datepicker();
+        } );
+        $( function(){
+          $( "#checkin" ).datepicker();
+        } );
+        </script>
+        <script>
+          $('#save').click(function(){
+            Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+           title: 'Your work has been saved',
+           showConfirmButton: false,
+  timer: 1500
+})
+
+          })
+        </script>
+       
+      <script>
+        $("#Booking").click(function(){
+          var jenis= $('#jenis').val();
+          if(jenis=="Villa"){
+              $("#divVilla").fadeIn("10000");
+              $("#divObjek_Wisata").fadeOut("10000");
+
+          }else if(jenis=='Objek_Wisata'){
+              $("#divVilla").fadeOut("10000");
+              $("#divObjek_Wisata").fadeIn("10000");
+
+          }
+var scrollPos = $("#divObjek_Wisata").offset().top;
+$(window).scrollTop(scrollPos);
+
+
+        });
+        function booking(namaObjek,harga){
+          $('#modalform').modal('show');
+          $('#judulmodal').text(namaObjek);
+          $('#harga').val(harga);
+        }
+
+        $('#qty').on('input',function(e){
+          var qty = $('#qty').val();
+          var harga = $('#harga').val().replace(/\./g,'');
+          var total = parseInt(harga) * parseInt(qty);
+          $('#total').val(total.toLocaleString().replace(/\,/g, '.'));
+          // alert(harga);
+        });
+      </script>
+    </body>
+  </html>
+
+
+
+
+
+
+  
+
+
+
+     

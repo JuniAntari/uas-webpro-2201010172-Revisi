@@ -1,0 +1,6 @@
+Ide project yang saya buat yaitu tentang objek wisata yang ada di bali salah satunya yaitu nusa penida. saya coba membuat web tersebut nantinya saya akan kembangkan lagi dan siapa tau ada yang mau membeli web yang saya buat.Mohon maaf pak saya tidak menambahkan data base
+
+Deskripsi dari project yang saya buat :
+Projek yang saya buat tentang objek wisata yang ada di bali salah satunya yaitu nusa penida ,di dalam web ini terdapat menu Home untuk melihat objek- objek wisata yang ada di nusa penida dan ada menu akomodasi untuk memboking tempat dan untuk memboking penyewaan villa dan di menu wawasan terdapat deskripsi tentang obejek wisata tersebut.
+
+
